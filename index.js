@@ -19,14 +19,12 @@ ws.onmessage = (event) => {
     // Limpar console antes da resposta
     process.stdout.write('\033c');
     const obj = JSON.parse(event.data);
-    //Mostrando dados
-    console.log(obj)
-    // // mostrando symbol = s
-    // console.log(`Symbol: ${obj.s}`);
-    // // lower ask = a
-    // console.log(`Best Ask: ${obj.a}`);
-    // // lower bid = b
-    // console.log(`Best Bid: ${obj.b}`);
+    // mostrando symbol = s
+    console.log(`Symbol: ${obj.s}`);
+    // lower ask = a
+    console.log(`Best Ask: ${obj.a}`);
+    // lower bid = b
+    console.log(`Best Bid: ${obj.b}`);
     
 }
 
